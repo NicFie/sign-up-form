@@ -1,0 +1,186 @@
+:root {
+    --light-color: #ecf4fd;
+    --dark-color: #719ECE;
+}
+
+body {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left {
+    width: 35vw;
+    /*background-image: url("/home/nicolafield2/repos/sign-up-form/sharon-mccutcheon-epRlEd6oTmE-unsplash.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    
+}
+
+.hero-container {    
+    min-height: calc(100vh - 25vh - 50px);
+    margin-top: calc(25vh);
+    
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    height: 25%;
+    width: calc(100% - 20px);
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+}
+
+.hero::before {
+    content: "";
+    background-color: var(--light-color);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.60;
+}
+
+h1 {
+    font-family: 'Poller One', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+img {
+    height: 120px;
+    width:auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+h6 {
+    align-self: center;
+    
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 6vw;
+}
+
+.top {
+    height: 25vh;
+    background-color: var(--light-color);
+    box-sizing: border-box;
+    width: 65vw;
+}
+
+.para {
+    padding-left: 45px;
+    line-height: 1.6;
+    width: 65%;
+    font-size: large;
+}
+
+.middle {
+    height: 45vh;
+    background-color: white;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: calc(65vw - 15px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.middle p {
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+input {
+    width: 80%;
+    border-radius: 5px;
+    padding: 3px 10px;
+    border: 1px grey solid;
+    margin-top: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: var(--dark-color);
+    box-shadow: 0 0 5px var(--dark-color);
+    
+}
+
+.bottom {
+    height: 25vh;
+    background-color: var(--light-color);
+    width: 65vw;
+    box-sizing: border-box;
+    padding: 45px;
+}
+
+
+/* CSS */
+.btn {
+  background-color: var(--dark-color);
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.btn:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 16px 48px;
+  }
+}
+
+a {
+    color: black;
+}
