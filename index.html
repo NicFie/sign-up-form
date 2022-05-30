@@ -27,52 +27,58 @@
             Manage your students, scheduling, invoices and much more. Helping you focus on the music.<br><br> Sign up now to get started</p>
         </div>
         
-        <form action="hi" method="post">
+        <form action="" method="post" id="form">
             <div class="middle">
                 <p>
                     <label for="fname">
                         <span>first name</span>
                     </label>
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" required maxlength="20">
+                    <span class="help">Please enter your first name</span>
                 </p>
                 <p>
                     <label for="lname">
                         <span>last name</span>
                     </label>
-                    <input type="text" name="lname" id="lname">
+                    <input type="text" name="lname" id="lname" required maxlength="30">
+                    <span class="help">Please enter your last name</span>
                 </p>
                 <p>
                     <label for="email">
                         <span>email</span>
                     </label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
+                    <span class="help">Please enter a valid email address</span>
                 </p>
                 <p>
                     <label for="num">
                         <span>phone number</span>
                     </label>
-                    <input type="tel" name="num" id="num">
+                    <input type="tel" name="num" id="num" required pattern="^(?:0|\+?44)(?:\d\s?){9,10}$">
+                    <span class="help">Please enter a valid UK landline or mobile number</span>
                 </p>
                 <p>
                     <label for="pwd">
                         <span>password</span>
                     </label>
-                    <input type="password" name="pwd" id="pwd">
+                    <input type="password" name="pwd" id="pwd" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                    <span class="help">Please enter a password with minimum of eight characters, including an uppercase letter, a lowercase letter, and number or special character</span>
                 </p>
                 <p>
                     <label for="cpwd">
                         <span>confirm password</span>
                     </label>
-                    <input type="password" name="cpwd" id="cpwd">
+                    <input type="password" class = "confirm-input" name="cpwd" id="cpwd" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                    <span id="confirm-pwd" class="help">Make sure your password matches</span>
                 </p>
             </div>
             <div class="bottom">
-                <button type="submit" class="btn">Create account</button>
+                <button type="submit" id="submit" class="btn">Create account</button>
                 <p>Already have an account? <a href="" target="_blank">Log in here</a></p>
             </div>
         </form>
             
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

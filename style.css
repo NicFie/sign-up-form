@@ -10,7 +10,7 @@ body {
 
 .left {
     width: 35vw;
-    /*background-image: url("/home/nicolafield2/repos/sign-up-form/sharon-mccutcheon-epRlEd6oTmE-unsplash.jpg");*/
+    background-image: url("/home/nicolafield2/repos/sign-up-form/sharon-mccutcheon-epRlEd6oTmE-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -100,7 +100,7 @@ h6 {
     padding-left: 15px;
 }
 
-.middle p {
+.middle > p {
     width: 40%;
     box-sizing: border-box;
     display: flex;
@@ -123,6 +123,23 @@ input:focus {
     border-color: var(--dark-color);
     box-shadow: 0 0 5px var(--dark-color);
     
+}
+
+input:valid {
+    border-color: green;
+    box-shadow: 0 0 5px green;
+}
+
+.help {
+    font-size: x-small;
+    text-transform: initial;
+    width: 80%;
+    color: #c00;
+    visibility: hidden;
+}
+
+.invalid .help {
+    visibility: visible;
 }
 
 .bottom {
