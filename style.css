@@ -6,11 +6,12 @@
 body {
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
 }
 
 .left {
     width: 35vw;
-    background-image: url("/home/nicolafield2/repos/sign-up-form/sharon-mccutcheon-epRlEd6oTmE-unsplash.jpg");
+    background-image: url("https://images.unsplash.com/photo-1580744700898-a33aa43febe5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
