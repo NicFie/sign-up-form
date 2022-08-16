@@ -1,5 +1,7 @@
 # sign-up-form
 
+https://nicfie.github.io/sign-up-form/
+
 This project is part of the Intermediate HTML and CSS course of the Odin Project. As part of this project, I will
 put into practice some of the new items and skills that I have learnt, including:
 
